@@ -1,0 +1,22 @@
+<div
+  style="
+    margin: auto;
+    width: 50%;
+    border: 3px solid gray;
+    padding: 10px;
+    text-align: center;
+  "
+>
+  <ng-container *ngIf="product"
+    ><img src="{{ product.url }}" mat-card-image /><br />
+    <mat-card-title>{{ product.name }}</mat-card-title
+    ><br />
+
+    <mat-card-subtitle>{{ product.description }}</mat-card-subtitle
+    ><br />
+    <div>Price: {{ product.price }}</div>
+    <button mat-raised-button color="primary" (click)="Addtobag()">
+      Add To Cart
+    </button>
+  </ng-container>
+</div>

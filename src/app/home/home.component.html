@@ -1,0 +1,10 @@
+<mat-list role="list" style="text-align: center; font-style: bold">
+  Product List
+  <ng-container *ngFor="let product of productList"
+    ><mat-list-item role="listitem" style="text-align: center"
+      ><a [routerLink]="['/product', product.productId]">{{
+        product.name
+      }}</a></mat-list-item
+    >
+  </ng-container>
+</mat-list>
